@@ -6,6 +6,49 @@
     <title>Registro | ForceHub</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-force">Force</span><span class="logo-hub">Hub</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="inicio_sesión.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrar usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario">
+        <form action="">
+            <div class="campo">
+                <label for="nombre_usuario">Nombre:</label>
+                <input type="text" name="nombre_usuario" id="nombre_usuario" required minlength="3" maxlength="20">
+            </div>
+            <div class="campo">
+                <label for="apellidos_usuario">Apellidos:</label>
+                <input type="text" name="apellidos_usuario" id="apellidos_usuario" required minlength="20" maxlength="50">
+            </div>
+            <div class="campo">
+                <label for="nick">Nombre de usuario:</label>
+                <input type="text" name="nick" id="nick" required minlength="10" maxlength="25">
+            </div>
+            <div class="campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required minlength="10" maxlength="20">
+            </div>
+            <div class="boton-campo">
+                <a href="registro.html"><button type="submit">Crear usuario</button></a>
+            </div>
+        </form>
+        <div class="boton-campo">
+            <p>¿Ya tienes un usuario?</p>
+            <a href="inicio_sesión.html"><button type="submit">Iniciar sesión</button></a>
+        </div>
+    </div>
 </body>
 </html>
