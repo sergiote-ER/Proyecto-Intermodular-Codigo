@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto - ForceHub</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-force">Force</span><span class="logo-hub">Hub</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="inicio_sesión.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrar usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form action="">
+                <div>
+                    <label for="nombre_usuario">Nombre:</label>
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" required minlength="3" maxlength="20">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto" required minlength="3" maxlength="20">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+            </form>
+       </div> 
+    </main>
+    <footer>
+       
+    </footer>
+</body>
+</html>
