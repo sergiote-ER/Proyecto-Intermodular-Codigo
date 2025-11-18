@@ -7,19 +7,23 @@ body {
 header {
     background: #222;
     padding: 10px 0;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
 }
-.logo {
+header .logo {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 32px;
   color: #333333;
 }
 
-.logo-force {
+header .logo-force {
   color: #333333; 
 }
 
-.logo-hub {
+header .logo-hub {
   background-color: #28a745; 
   border-radius: 10px;
   padding: 3px;
@@ -34,6 +38,7 @@ header nav {
     justify-content: space-between;
     padding: 15px 40px;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -63,32 +68,56 @@ header nav a:hover {
   border-radius: 10px;
   padding: 50px;
   max-width: 500px;
-  margin: 40px auto; 
+  margin: 150px auto; 
 }
 
-.formulario input {
-  width: 100%;
-  padding: 10px 10px;
+.formulario input,
+.formulario select,
+.formulario textarea  {
+  width: 95%;
+  padding: 10px;
   margin-bottom: 15px;
   border: 1px solid lightgrey;
   border-radius: 6px;
   font-size: 1rem;
 }
 
-.formulario button {
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: #28a745; 
+  outline: none;
+}
+
+button {
   width: 100%;
   padding: 12px;
   background-color: #28a745; 
-  color: #fff;
-  font-size: 1rem;
+  color: white;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   transition: 0.3s;
   margin: 10px;
 }
 
-.formulario button:hover {
+.botones {
+  text-align: center;
+}
+
+.botones button {
+  width: 45%;
+}
+
+button:hover {
   background-color: #218838; 
+}
+
+.boton-alt button {
+  background-color: #ff9f43;
+}
+
+.boton-alt button:hover {
+  background-color: #ff6f00;
 }
