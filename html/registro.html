@@ -16,42 +16,98 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="inicio_sesión.html">Iniciar sesión</a></li>
-                <li><a href="registro.html">Registrar usuario</a></li>
+                <li><a href="">Registrar usuario</a></li>
             </ul>
         </nav>
     </header>
-    <div class="formulario">
-        <form action="">
-            <div class="campo">
-                <label for="nombre_usuario">Nombre:</label>
-                <input type="text" name="nombre_usuario" id="nombre_usuario" required minlength="3" maxlength="20">
+    <main>
+        <div class="formulario">
+            <form action="">
+                <div>
+                    <label for="nombre_usuario">Nombre:</label>
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" required minlength="3" maxlength="20">
+                </div>
+                <div>
+                    <label for="apellidos_usuario">Apellidos:</label>
+                    <input type="text" name="apellidos_usuario" id="apellidos_usuario" required minlength="20" maxlength="50">
+                </div>
+                <div>
+                    <label for="nick">Nombre de usuario:</label>
+                    <input type="text" name="nick" id="nick" required minlength="10" maxlength="25">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input id="contraseña" name="contraseña" type="password" minlength="8" required />
+                </div>
+                <div>
+                    <label for="confirmar_contraseña">Confirmar contraseña</label>
+                    <input id="confirm" name="confirmar_contraseña" type="password" minlength="8" required />
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" pattern="^[0-9+\-\s()]{6,20}$" placeholder="+34 600 000 000" />
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <input id="nacimiento" name="nacimiento" type="date" required/>
+                </div>
+                <div>
+                    <label for="sexo">Género</label>
+                    <select id="sexo" name="sexo">
+                        <option>Prefiero no decirlo</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipo_usuario">Tipo de usuario</label>
+                    <select id="tipo_usuario" name="tipo_usuario" required>
+                        <option value="" disabled selected>Elige una opción</option>
+                        <option value="gratuita">Gratuita</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="plan_suscripcion">Plan de suscripción</label>
+                    <select id="plan_suscripcion" name="plan_suscripcion">
+                        <option value="" disabled selected>Elige un plan</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="trimestral">Trimestral</option>
+                        <option value="anual">Anual</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pago">Método de pago</label>
+                    <select id="pago" name="pago">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="paypal">Paypal</option>
+                            <option value="google_pay">Google Pay</option>
+                            <option value="apple_pay"></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="objetivos">Objetivos / notas</label>
+                    <textarea id="objetivos" name="objetivos" placeholder="Ganar masa muscular, perder peso, ganar fuerza, mejorar cardio, tonificar, ..."></textarea>
+                </div>
+                <div class="botones">
+                    <a href="registro.html"><button type="submit">Crear cuenta</button></a>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+            <div class="boton-alt">
+                <p>¿Ya tienes un usuario?</p>
+                <a href="inicio_sesión.html"><button type="submit">Iniciar sesión</button></a>
             </div>
-            <div class="campo">
-                <label for="apellidos_usuario">Apellidos:</label>
-                <input type="text" name="apellidos_usuario" id="apellidos_usuario" required minlength="20" maxlength="50">
-            </div>
-            <div class="campo">
-                <label for="nick">Nombre de usuario:</label>
-                <input type="text" name="nick" id="nick" required minlength="10" maxlength="25">
-            </div>
-            <div class="campo">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="campo">
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password" required minlength="10" maxlength="20">
-            </div>
-            <div class="boton-campo">
-                <a href="registro.html"><button type="submit">Crear usuario</button></a>
-            </div>
-        </form>
-        <div class="boton-campo">
-            <p>¿Ya tienes un usuario?</p>
-            <a href="inicio_sesión.html"><button type="submit">Iniciar sesión</button></a>
         </div>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
-
-
