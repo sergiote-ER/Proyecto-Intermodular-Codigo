@@ -106,8 +106,12 @@ button {
   text-align: center;
 }
 
-.botones button {
-  width: 45%;
+.limpiar button {
+  background-color: rgb(237, 8, 8); 
+}
+
+.limpiar button:hover {
+  background-color: rgb(172, 12, 12);
 }
 
 button:hover {
@@ -121,3 +125,4 @@ button:hover {
 .boton-alt button:hover {
   background-color: #ff6f00;
 }
+
