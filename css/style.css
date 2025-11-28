@@ -72,8 +72,7 @@ header nav a:hover {
 }
 
 .formulario input,
-.formulario select,
-.formulario textarea  {
+.formulario select  {
   width: 95%;
   padding: 10px;
   margin-bottom: 15px;
@@ -81,6 +80,17 @@ header nav a:hover {
   border-radius: 6px;
   font-size: 1rem;
 }
+
+.formulario textarea  {
+  width: 95%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
 
 .formulario input:focus,
 .formulario select:focus,
